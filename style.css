@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{ margin: 0; padding: 0; box-sizing: border-box; border: none; outline: none; list-style: none; font-family: 'Poppins', sans-serif; font-family: 'Poppins', sans-serif;}
+ 
+ body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020d45;
+    background: linear-gradient(90deg, #5936b4 0%, #362a84 100%);
+    color: #101010;
+    font-size: 1rem;
+ }
+ .temperature-convertor{
+    background-color: #fff;
+    width: 100%;
+    min-width: 320px;
+    padding: 20px 25px 45px;
+    border-radius: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -5px -5px 250px 0 rgba(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(21px);
+ }
+
+ .mobile{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    align-items: center;
+ }
+
+ .title{
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+ }
+
+ .result{
+    text-align: center;
+    margin: 20px 0;
+ }
+ .result-heading{
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+ }
+ .celcius-value{
+border-bottom: 2px solid #ccc;
+padding: 10px;
+transition: all .45s ease;
+}
+
+.degre-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.degre-feild{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+label{
+    color: #555;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+
+input,select{
+background: transparent;
+border-bottom:2px solid #ccc;
+padding: 8px;
+margin-bottom: 15px;
+}
+
+input:focus{
+    border: 1px solid #4c49f3;
+}
+option{
+background: #3c39e7;
+color: #f6f6f6;
+}
+
+.convert-btn{
+border-radius: 5px;
+background: linear-gradient(to bottom, #3633f3, #120fb9);
+color: #f6f6f6;
+padding: 12px 80px;
+font-weight: bold;
+letter-spacing: 1px;
+margin-top: 10px;
+transition: hover 0.3s ease-in;
+text-transform: uppercase;
+cursor: pointer;
+transition: transform .2s ease;
+
+}
+
+.convert-btn:hover{
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+}
+
+.fa{
+    margin-left: -12px;
+    margin-right: 8px;
+}
+button:active{
+    transform: scale(95%);
+}
+@media (max-width: 480px){
+    body{
+        background: white;
+    }
+.container{
+    width: 100%;
+    height: 100%;
+}
+}
